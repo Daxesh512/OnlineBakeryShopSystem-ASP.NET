@@ -1,0 +1,254 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPanel.master.cs" Inherits="OnlineBakeryShopSystemProject.ProjectFile.MasterPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Master Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<!-- //js -->
+<!-- for-gallery-rotation -->
+<script src="js/modernizr.custom.97074.js" type="text/javascript"></script>
+<!-- //for-gallery-rotation -->
+<!-- FlexSlider -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script defer src="js/jquery.flexslider.js" type="text/javascript"></script>
+<script type="text/javascript">
+						$(window).load(function(){
+						  $('.flexslider').flexslider({
+							animation: "slide",
+							start: function(slider){
+							  $('body').removeClass('loading');
+							}
+						  });
+						});
+					  </script>
+<!-- //FlexSlider -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
+<link href='//fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet"/>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<h1><a class="navbar-brand" href="Home.aspx"><label>S</label>weet<label>B</label>akery<span>Baked Good Taste for you </span></a></h1>
+						</div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					 <ul class="nav navbar-nav">
+						<li class="hvr-sweep-to-bottom active"><a href="Home.aspx">Home</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="About.aspx" >About</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="Services.aspx" >Services</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="Gallery.aspx" >Gallery</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="Contact.aspx" >Contact Us</a></li>
+						 <li class="hvr-sweep-to-bottom"><a href="Registration.aspx" >Sign UP</a></li>
+						 <li class="hvr-sweep-to-bottom"><a href="Login.aspx" >Order Now</a></li>
+					  </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="banner-info">
+								<div class="banner-info-left">
+									<h3>Baked fresh for you </h3>
+									<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+									<div class="more">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info">
+								<div class="banner-info-left">
+									<h3>Baked fresh Daily </h3>
+									<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+									<div class="more">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info">
+								<div class="banner-info-left">
+									<h3>Baked fresh for you </h3>
+									<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+									<div class="more">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>	
+			<div class="banner-pos">
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-cloud" aria-hidden="true"></i> OUR BREADS</h3>
+						<p> Fresh Brades.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-globe" aria-hidden="true"></i> BEST COOKIES</h3>
+						<p>Fresh Cookies.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> WEDDING CAKES</h3>
+						<p>Fresh Cakes.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-star" aria-hidden="true"></i>TARTS AND PIES</h3>
+						<p>All of The Dealy Fresh Product.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+
+			<div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+			</div>
+<!-- footer -->
+	<div class="footer w3layouts-agile">	
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid-w3layouts-agile">
+					<h3 class="title">Services</h3>
+					<ul>
+						<li><a href="#">Recived Online Order</a></li>
+						<li><a href="#">Home Delivery</a></li>
+						<li><a href="#">Cash On Query</a></li>
+						<li><a href="#">Speedi Services</a></li>
+						<li><a href="#">Available In Descount</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid-w3layouts-agile">
+					<h3 class="title">Information</h3>
+					 <ul>
+						<li><a href="#">Bakery Items</a></li>
+						<li><a href="#">Order Now</a></li>
+						<li><a href="#">Archives</a></li>
+						<li><a href="#">Our Staff</a></li>
+					</ul>
+				</div>
+		    <div class="col-md-3 footer-grid-w3layouts-agile">
+					<h3 class="title">More details</h3>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li><a href="#">Our Informations</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid-w3layouts-agile contact-grid">
+						<h3 class="title">Contact us</h3>
+						<ul>
+							<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Bhavanagar High Way.</li>							
+							<li class="adrs">Madhusmruti Place</li>
+							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91 8585859696</li>
+							<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#">sweetbakery123@gmail.com</a></li>
+						</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="copy">
+		<div class="container">
+			<div class="copy-left-w3l-agile">
+				<p>© 2022 Sweet Bakery. All rights reserved | Developed by <a href="#">Jayesh Ahir</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>					
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!--//footer-->
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js" type="text/javascript"> </script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+
+        </div>
+    </form>
+</body>
+</html>
